@@ -1,2 +1,0 @@
-# CompleteGymTracker
-Created with CodeSandbox
