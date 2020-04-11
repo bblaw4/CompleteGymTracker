@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-const _ = require("underscore");
 
 import Header from "./components/Header";
 import SigninForm from "./components/SigninForm";
 import Status from "./components/Status";
 import CurrentUsers from "./components/CurrentUsers";
+
+const _ = require("underscore");
 
 export default function App() {
   const [users, setUsers] = useState([]);
@@ -22,6 +23,7 @@ export default function App() {
       return;
     } else {
       setError(false);
+      console.log(users);
       setUsers([...users, user]);
     }
   };

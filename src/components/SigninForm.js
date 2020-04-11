@@ -8,7 +8,7 @@ export default function SigninForm({ handleUsers, status, error }) {
   const handleSubmit = e => {
     e.preventDefault();
     // create a user object to store their information
-    const user = { id: uid(), name: name.toUpperCase() };
+    const user = { id: uid(), name: name.toUpperCase(), timein: Date.now() };
     // prevent null/undefined names
     if (!name.trim()) {
       return;
