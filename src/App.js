@@ -45,14 +45,23 @@ export default function App() {
               status={users.length}
               error={err}
             />
-            <Status status={users.length} />
+
+            <div className="card">
+              <div className="card-body">
+                <Status status={users.length} />
+              </div>
+            </div>
           </div>
           <div className="col">
-            <CurrentUsers
-              currentUsers={users}
-              remove={removeUser}
-              err={setError}
-            />
+            <div className="card">
+              <div className="card-body">
+                <CurrentUsers
+                  currentUsers={users}
+                  remove={removeUser}
+                  err={setError}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
